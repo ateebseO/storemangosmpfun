@@ -1,0 +1,17 @@
+name: MangoStatsSync
+version: 1.0.0
+main: com.mangosmp.stats.MangoStatsSync
+api-version: "1.18"
+description: Sends real player statistics to the MangoSMP website.
+softdepend: [PlaceholderAPI, Vault]
+commands:
+  mangostats:
+    description: Show the last sync result, or run /mangostats sync to sync now.
+    usage: /mangostats [sync|status]
+    permission: mangostats.admin
+  link:
+    description: Link your Minecraft account to your Discord account on the MangoSMP website.
+    usage: /link <code>
+permissions:
+  mangostats.admin:
+    default: op

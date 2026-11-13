@@ -1,0 +1,25 @@
+# MangoStatsSync: sends real player stats from this server to your MangoSMP website.
+# Keep this file private: api-key is a secret.
+
+# Your website's ingest address (replace YOURSITE with your real domain)
+api-url: "https://YOURSITE.pages.dev/api/ingest"
+
+# Must be exactly the same as the STATS_API_KEY secret you set in Cloudflare
+api-key: "PASTE_THE_STATS_API_KEY_HERE"
+
+# How often to sync, in seconds (minimum 20)
+interval-seconds: 60
+
+# How many offline players to refresh on every sync (rolling through everyone who ever joined)
+offline-players-per-sync: 25
+
+# Leave empty to auto-detect <main world>/stats. Set a path only if your stats are somewhere else.
+stats-folder: ""
+
+# PlaceholderAPI placeholders. Leave a line empty ("") to skip that stat. Use plain-number placeholders
+# (not formatted ones like 1.2K). Test any placeholder in game with:  /papi parse me <placeholder>
+placeholders:
+  balance: "%vault_eco_balance%"
+  rank: "%vault_rank%"
+  shards: ""        # put your shards placeholder here, e.g. %playerpoints_points% if shards are PlayerPoints
+  killstreak: ""    # put your killstreak placeholder here

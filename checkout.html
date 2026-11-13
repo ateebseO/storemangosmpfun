@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout | MangoSMP</title><meta name="description" content="Complete your MangoSMP order."><meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header"><nav class="wrap nav" aria-label="Main">
+<a class="brand" href="index.html" aria-label="MangoSMP home"><img src="assets/logo-sm.png" alt="MangoSMP" width="260" height="235"></a>
+<button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<ul class="links"><li><a href="index.html">Home</a></li><li><a href="store.html">Store</a></li><li><a href="leaderboards.html">Leaderboards</a></li><li><a href="owner.html">Owner</a></li><li><a href="account.html">Player Login</a></li><li><a href="rules.html">Rules</a></li><li><a href="converter.html">Converter</a></li><li><a href="faq.html">FAQ</a></li><li><a class="cartbtn" href="store.html#cart" data-cart aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M2 3h3l3 12h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><b data-cartcount>0</b></a></li><li><a class="btn sm discord" data-discord href="#">Discord</a></li></ul>
+</nav></header>
+<main><section class="page-head"><div class="wrap"><h1>Checkout</h1><p class="lead">Enter your details, choose how you will pay, then place your order. Your order is only completed after staff verify your payment.</p></div></section>
+<section class="section"><div class="wrap"><div id="checkout"><div class="co-grid">
+<form id="co-form" class="stack" novalidate>
+<div class="card stack"><h3 class="h">1. Your details</h3>
+<label>Minecraft username<input name="mc" autocomplete="off" maxlength="17" placeholder="Steve" required><small>Check this carefully. Items are delivered to this username.</small></label>
+<label>Discord username (optional)<input name="dc" autocomplete="off" maxlength="40" placeholder="yourname"></label>
+<p class="muted small" id="co-who"><a href="account.html" style="color:var(--y)">Log in with Discord</a> to track your orders and fill in your details automatically.</p></div>
+<div class="card stack"><h3 class="h">2. Payment method</h3><div id="co-pay" class="stack"></div><div id="co-instr"></div>
+<p class="muted">No payment is taken on this website. After placing the order you will pay using the instructions above, and staff will mark your order as paid once they verify it.</p></div>
+<div class="card stack"><label class="agree"><input type="checkbox" name="agree"><span>I have read and agree to the <a href="policy.html" target="_blank" rel="noopener">Server Policy</a>, <a href="refund.html" target="_blank" rel="noopener">Refund Policy</a> and <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>, and I have checked my Minecraft username and selected products.</span></label>
+<p class="err" id="co-msg" role="alert" tabindex="-1"></p><button class="btn block" id="co-btn">Place order</button></div></form>
+<aside class="card sticky"><h3 class="h">Order summary</h3><div id="co-items" class="stack"></div><div class="trow" style="margin-top:1.2rem"><span>Total</span><span id="co-total"></span></div>
+<p class="muted" style="margin-top:1rem"><a href="store.html#cart" style="color:var(--y)">Edit cart</a> · <a data-discord href="#" style="color:var(--y)">Discord support</a></p></aside>
+</div></div></div></section></main>
+<footer class="site-footer"><div class="wrap foot">
+<div><a class="brand" href="index.html" aria-label="MangoSMP home"><img src="assets/logo-sm.png" alt="MangoSMP" width="260" height="235"></a><p>A survival server with a friendly community, fair ranks and seasonal events.</p>
+<button class="btn sm" data-copy>Copy IP: <span data-ip></span></button></div>
+<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="store.html">Store</a></li><li><a href="leaderboards.html">Leaderboards</a></li><li><a href="owner.html">Owner</a></li><li><a href="account.html">Player Login</a></li><li><a href="rules.html">Rules</a></li><li><a href="converter.html">Converter</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+<div><h4>Store</h4><ul><li><a href="store.html#ranks">Ranks</a></li><li><a href="store.html#keys">Keys</a></li><li><a href="store.html#cart">Cart</a></li><li><a href="order.html">Track an order</a></li></ul></div>
+<div><h4>Policies</h4><ul><li><a href="policy.html">Server Policy</a></li><li><a href="refund.html">Refund Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a data-discord href="#">Discord</a></li><li><a href="store.html">Visit the store</a></li></ul></div>
+</div><div class="legal"><div class="wrap">&copy; <span id="yr">2026</span> MangoSMP. Not affiliated with Mojang AB or Microsoft. &middot; <a href="admin.html" style="color:inherit">Admin</a></div></div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/config.js"></script><script src="js/main.js"></script><script src="js/store-config.js"></script><script src="js/shop.js"></script><script src="js/store.js"></script>
+<script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
+</body></html>

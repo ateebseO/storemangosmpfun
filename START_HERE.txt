@@ -1,0 +1,14 @@
+MANGOSMP - START HERE
+
+1) EXTRACT the zip first (right-click > Extract All).
+   Do NOT double-click files while they are still inside the zip. The pages need the
+   "css", "js" and "assets" folders sitting next to them. Without those folders the
+   site looks like plain text (no colors, broken logo).
+
+2) To just LOOK at the design on your computer:
+   open the extracted folder > site > double-click index.html
+   (Store, Leaderboards and Login need the real website. On your computer they will
+   say "temporarily unavailable" until you deploy.)
+
+3) To put the website online (Netlify, Turso, Discord, Minecraft server):
+   follow BEGINNER_GUIDE.md step by step.

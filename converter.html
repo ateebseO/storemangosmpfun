@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Currency Converter | MangoSMP</title><meta name="description" content="Convert PKR to USD and USD to PKR with live exchange rates."><meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header"><nav class="wrap nav" aria-label="Main">
+<a class="brand" href="index.html" aria-label="MangoSMP home"><img src="assets/logo-sm.png" alt="MangoSMP" width="260" height="235"></a>
+<button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<ul class="links"><li><a href="index.html">Home</a></li><li><a href="store.html">Store</a></li><li><a href="leaderboards.html">Leaderboards</a></li><li><a href="owner.html">Owner</a></li><li><a href="account.html">Player Login</a></li><li><a href="rules.html">Rules</a></li><li><a href="converter.html" class=active aria-current=page>Converter</a></li><li><a href="faq.html">FAQ</a></li><li><a class="cartbtn" href="store.html#cart" data-cart aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M2 3h3l3 12h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><b data-cartcount>0</b></a></li><li><a class="btn sm discord" data-discord href="#">Discord</a></li></ul>
+</nav></header>
+<main><section class="page-head"><div class="wrap"><h1>Currency converter</h1><p class="lead">Convert Pakistani Rupees (Rs) and US Dollars ($) using live exchange rates.</p></div></section><section class="section"><div class="wrap"><div class="cv" data-cvroot>
+<div class="cv-top"><div class="cv-tabs" role="tablist" aria-label="Conversion direction"><button type="button" role="tab" class="on" data-dir="pkr-usd" aria-selected="true">PKR &rarr; USD</button><button type="button" role="tab" data-dir="usd-pkr" aria-selected="false">USD &rarr; PKR</button></div><span class="pill wait" data-cv="status">Updating…</span></div>
+<div class="cv-grid">
+<label class="cv-box"><span class="cv-lab">You pay <small data-cv="from-label">Pakistani Rupees</small></span><span class="cv-in"><b data-cv="prefix">Rs</b><input data-cv="amount" inputmode="decimal" autocomplete="off" maxlength="20" placeholder="0.00" aria-label="Amount to convert"><i data-cv="code-from">PKR</i></span></label>
+<button type="button" class="cv-swap" data-cv="swap" aria-label="Swap conversion direction" title="Swap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<div class="cv-box"><span class="cv-lab">You get <small data-cv="to-label">US Dollars</small></span><div class="cv-out" aria-live="polite"><span data-cv="out">—</span><i data-cv="code-to">USD</i></div></div>
+</div>
+<p class="err" data-cv="err" role="alert"></p>
+<div class="cv-chips" data-cv="chips" aria-label="Quick amounts"></div>
+<div class="cv-eq" data-cv="eq">Enter an amount to see the conversion</div>
+<div class="cv-info"><div><small>EXCHANGE RATE</small><b data-cv="rate1">—</b><b data-cv="rate2"></b></div><div><small>LAST UPDATED</small><b data-cv="updated">—</b><span class="muted" data-cv="checked"></span></div></div>
+<div class="cv-actions"><button type="button" class="btn sm" data-cv="copy" disabled>Copy result</button><button type="button" class="btn ghost sm" data-cv="clear">Clear</button><button type="button" class="btn ghost sm" data-cv="refresh">Refresh rate</button></div>
+<p class="muted cv-note">Exchange rates by <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Exchange Rate API</a>. For information only: your bank or payment provider may use a different rate. MangoSMP store prices are in PKR (Rs).</p>
+</div>
+<div class="cta" style="margin-top:3rem"><h2>Ready to shop?</h2><p>Store prices are shown in Pakistani Rupees (Rs).</p><a class="btn" href="store.html">Visit the store</a></div></div></section></main>
+<footer class="site-footer"><div class="wrap foot">
+<div><a class="brand" href="index.html" aria-label="MangoSMP home"><img src="assets/logo-sm.png" alt="MangoSMP" width="260" height="235"></a><p>A survival server with a friendly community, fair ranks and seasonal events.</p>
+<button class="btn sm" data-copy>Copy IP: <span data-ip></span></button></div>
+<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="store.html">Store</a></li><li><a href="leaderboards.html">Leaderboards</a></li><li><a href="owner.html">Owner</a></li><li><a href="account.html">Player Login</a></li><li><a href="rules.html">Rules</a></li><li><a href="converter.html">Converter</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+<div><h4>Store</h4><ul><li><a href="store.html#ranks">Ranks</a></li><li><a href="store.html#keys">Keys</a></li><li><a href="store.html#cart">Cart</a></li><li><a href="order.html">Track an order</a></li></ul></div>
+<div><h4>Policies</h4><ul><li><a href="policy.html">Server Policy</a></li><li><a href="refund.html">Refund Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a data-discord href="#">Discord</a></li><li><a href="store.html">Visit the store</a></li></ul></div>
+</div><div class="legal"><div class="wrap">&copy; <span id="yr">2026</span> MangoSMP. Not affiliated with Mojang AB or Microsoft. &middot; <a href="admin.html" style="color:inherit">Admin</a></div></div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/config.js"></script><script src="js/main.js"></script><script src="js/converter.js"></script>
+<script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
+</body></html>

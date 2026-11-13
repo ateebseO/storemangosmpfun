@@ -1,0 +1,9 @@
+{
+  "name": "mangosmp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MangoSMP website: store, leaderboards and Discord login (Netlify + Turso)",
+  "engines": { "node": ">=18" },
+  "dependencies": { "@libsql/client": "^0.14.0" }
+}

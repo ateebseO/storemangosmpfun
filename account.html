@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Player Login | MangoSMP</title><meta name="description" content="Log in with Discord, link your Minecraft account and track your orders."><meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header"><nav class="wrap nav" aria-label="Main">
+<a class="brand" href="index.html" aria-label="MangoSMP home"><img src="assets/logo-sm.png" alt="MangoSMP" width="260" height="235"></a>
+<button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<ul class="links"><li><a href="index.html">Home</a></li><li><a href="store.html">Store</a></li><li><a href="leaderboards.html">Leaderboards</a></li><li><a href="owner.html">Owner</a></li><li><a href="account.html" class=active aria-current=page>Player Login</a></li><li><a href="rules.html">Rules</a></li><li><a href="converter.html">Converter</a></li><li><a href="faq.html">FAQ</a></li><li><a class="cartbtn" href="store.html#cart" data-cart aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M2 3h3l3 12h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><b data-cartcount>0</b></a></li><li><a class="btn sm discord" data-discord href="#">Discord</a></li></ul>
+</nav></header>
+<main><section class="page-head"><div class="wrap"><h1>Player login</h1><p class="lead">Log in with Discord to link your Minecraft account and track your store orders.</p></div></section><section class="section"><div class="wrap"><div class="acct-wrap" data-acct><p class="empty">Loading…</p></div></div></section></main>
+<footer class="site-footer"><div class="wrap foot">
+<div><a class="brand" href="index.html" aria-label="MangoSMP home"><img src="assets/logo-sm.png" alt="MangoSMP" width="260" height="235"></a><p>A survival server with a friendly community, fair ranks and seasonal events.</p>
+<button class="btn sm" data-copy>Copy IP: <span data-ip></span></button></div>
+<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="store.html">Store</a></li><li><a href="leaderboards.html">Leaderboards</a></li><li><a href="owner.html">Owner</a></li><li><a href="account.html">Player Login</a></li><li><a href="rules.html">Rules</a></li><li><a href="converter.html">Converter</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+<div><h4>Store</h4><ul><li><a href="store.html#ranks">Ranks</a></li><li><a href="store.html#keys">Keys</a></li><li><a href="store.html#cart">Cart</a></li><li><a href="order.html">Track an order</a></li></ul></div>
+<div><h4>Policies</h4><ul><li><a href="policy.html">Server Policy</a></li><li><a href="refund.html">Refund Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a data-discord href="#">Discord</a></li><li><a href="store.html">Visit the store</a></li></ul></div>
+</div><div class="legal"><div class="wrap">&copy; <span id="yr">2026</span> MangoSMP. Not affiliated with Mojang AB or Microsoft. &middot; <a href="admin.html" style="color:inherit">Admin</a></div></div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/config.js"></script><script src="js/main.js"></script><script src="js/store-config.js"></script><script src="js/shop.js"></script><script src="js/account.js"></script>
+<script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
+</body></html>

@@ -1,0 +1,22 @@
+name: Build Minecraft plugin
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "minecraft-plugin/**"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Build
+        run: mvn -B package
+        working-directory: minecraft-plugin
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MangoStatsSync
+          path: minecraft-plugin/target/MangoStatsSync.jar
